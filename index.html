@@ -13,39 +13,55 @@ font-family:Arial;
 color:white;
 }
 
-.ok{
-background:green;
+/* PANTALLAS */
+.ok, .deuda{
 height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
+}
+
+.ok{
+background:green;
 }
 
 .deuda{
 background:red;
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
 }
 
+/* TEXTO NORMAL (PC) */
 .estado{
-font-size:14vw;
+font-size:120px;
 font-weight:bold;
 }
 
 .nombre{
-font-size:7vw;
+font-size:50px;
 margin-top:20px;
 }
 
 .dni{
-font-size:6vw;
+font-size:40px;
 margin-top:10px;
+}
+
+/* 🔥 AJUSTE PARA CELULAR */
+@media (max-width: 768px){
+
+.estado{
+font-size:70px;
+}
+
+.nombre{
+font-size:30px;
+}
+
+.dni{
+font-size:25px;
+}
+
 }
 </style>
 
