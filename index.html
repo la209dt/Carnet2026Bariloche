@@ -1,3 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Verificación Alumno</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+padding:40px;
+background:#f4f6f9;
+}
+
+.caja{
+border-radius:12px;
+padding:25px;
+display:inline-block;
+background:white;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.ok{
+color:green;
+font-size:24px;
+font-weight:bold;
+margin-top:10px;
+}
+
+.deuda{
+color:red;
+font-size:24px;
+font-weight:bold;
+margin-top:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>Estado del Alumno</h2>
+
+<div class="caja" id="resultado">
+Cargando...
+</div>
+
 <script>
 
 const sheetURL="https://docs.google.com/spreadsheets/d/e/2PACX-1vToHCd9b22CYUpGzyfPB4g3n9BkJnezkKKmWwiHvcwNeZ2Cke83w9bnJ29CP9bMTvGqMQ4zTWOemF9Z/pub?output=csv";
@@ -49,3 +96,6 @@ document.getElementById("resultado").innerHTML="Alumno no encontrado";
 buscar();
 
 </script>
+
+</body>
+</html>
